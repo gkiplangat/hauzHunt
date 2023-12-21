@@ -2,11 +2,12 @@
 <html>
 <body>
 
-{% for x in users %}
-  <h1>{{ x }}</h1>
-{% endfor %}
-
-<p>This is a test view of the users.</p>
+<ul>
+    {% for x in mymembers %}
+        <li>{{ x.firstname }}</li>
+    {% endfor %}
+</ul>
+<p>Fetching data deom DB</p>
 
 </body>
 </html>
